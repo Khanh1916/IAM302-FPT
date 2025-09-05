@@ -1,0 +1,6 @@
+<project outputDir="C:\crackmes\19-CrackMe18\Confused" baseDir="C:\crackmes\19-CrackMe18" xmlns="http://confuser.codeplex.com">
+  <packer id="compressor" />
+  <module path="CrackMe18.exe">
+    <rule pattern="true" preset="maximum" />
+  </module>
+</project>

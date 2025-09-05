@@ -1,0 +1,196 @@
+Hive (C:\Users\Lenovo legion 5\Downloads\share\samples\samples\Win7\SAM) is not dirty.
+
+samparse v.20200825
+(SAM) Parse SAM file for user & group mbrshp info
+MITRE: T1136.001 (user activity)
+
+
+User Information
+-------------------------
+Username        : Administrator [500]
+Full Name       : 
+User Comment    : Built-in account for administering the computer/domain
+Account Type    : Default Admin User
+Account Created : 2012-04-18 20:40:53Z
+Name            :  
+Last Login Date : 2009-07-14 04:53:58Z
+Pwd Reset Date  : 2009-07-14 04:55:45Z
+Pwd Fail Date   : Never
+Login Count     : 1
+Embedded RID    : 500
+  --> Password does not expire
+  --> Account Disabled
+  --> Normal user account
+
+
+Username        : Guest [501]
+Full Name       : 
+User Comment    : Built-in account for guest access to the computer/domain
+Account Type    : Default Guest Acct
+Account Created : 2012-04-18 20:40:53Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Never
+Pwd Fail Date   : Never
+Login Count     : 0
+Embedded RID    : 501
+  --> Password does not expire
+  --> Account Disabled
+  --> Password not required
+  --> Normal user account
+
+
+Username        : john [1001]
+Full Name       : 
+User Comment    : 
+Account Type    : Default Admin User
+Account Created : 2012-04-18 17:41:51Z
+Name            :  
+Password Hint   : none
+Last Login Date : 2012-05-29 17:05:15Z
+Pwd Reset Date  : 2012-04-18 17:41:51Z
+Pwd Fail Date   : 2012-05-11 18:54:34Z
+Login Count     : 17
+Embedded RID    : 1001
+  --> Password does not expire
+  --> Password not required
+  --> Normal user account
+
+
+Username        : HomeGroupUser$ [1002]
+Full Name       : HomeGroupUser$
+User Comment    : Built-in account for homegroup access to the computer
+Account Type    : Custom Limited Acct
+Account Created : 2012-04-18 17:41:51Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : 2012-04-18 17:41:51Z
+Pwd Fail Date   : Never
+Login Count     : 0
+Embedded RID    : 1002
+  --> Password does not expire
+  --> Normal user account
+
+UserDontShowInLogonUI   : 1
+
+Username        : jdough [1003]
+Full Name       : jdough
+User Comment    : 
+Account Type    : Default Admin User
+Account Created : 2012-05-11 18:53:40Z
+Name            :  
+Password Hint   : The most used password
+Last Login Date : Never
+Pwd Reset Date  : 2012-05-11 18:54:05Z
+Pwd Fail Date   : 2012-05-11 18:54:34Z
+Login Count     : 0
+Embedded RID    : 1003
+  --> Password does not expire
+  --> Normal user account
+
+
+Username        : sammi [1004]
+Full Name       : sammi
+User Comment    : 
+Account Type    : Custom Limited Acct
+Account Created : 2012-05-11 18:54:34Z
+Name            :  
+Password Hint   : The usual
+Last Login Date : Never
+Pwd Reset Date  : 2012-05-11 18:54:54Z
+Pwd Fail Date   : Never
+Login Count     : 0
+Embedded RID    : 1004
+  --> Password does not expire
+  --> Normal user account
+
+
+-------------------------
+Group Membership Information
+-------------------------
+Group Name    : Users [4]
+LastWrite     : 2012-05-11 18:54:34Z
+Group Comment : Users are prevented from making accidental or intentional system-wide changes and can run most applications
+Users :
+  S-1-5-4
+  S-1-5-11
+  S-1-5-21-274982679-2960799222-214995329-1003
+  S-1-5-21-274982679-2960799222-214995329-1004
+
+Group Name    : Event Log Readers [0]
+LastWrite     : 2009-07-14 04:34:12Z
+Group Comment : Members of this group can read event logs from local machine
+Users         : None
+
+Group Name    : Guests [1]
+LastWrite     : 2012-04-18 20:36:58Z
+Group Comment : Guests have the same access as members of the Users group by default, except for the Guest account which is further restricted
+Users :
+  S-1-5-21-274982679-2960799222-214995329-501
+
+Group Name    : Distributed COM Users [0]
+LastWrite     : 2009-07-14 04:34:12Z
+Group Comment : Members are allowed to launch, activate and use Distributed COM objects on this machine.
+Users         : None
+
+Group Name    : Administrators [3]
+LastWrite     : 2012-05-11 18:53:40Z
+Group Comment : Administrators have complete and unrestricted access to the computer/domain
+Users :
+  S-1-5-21-274982679-2960799222-214995329-500
+  S-1-5-21-274982679-2960799222-214995329-1003
+  S-1-5-21-274982679-2960799222-214995329-1001
+
+Group Name    : Network Configuration Operators [0]
+LastWrite     : 2012-04-18 20:37:23Z
+Group Comment : Members in this group can have some administrative privileges to manage configuration of networking features
+Users         : None
+
+Group Name    : Cryptographic Operators [0]
+LastWrite     : 2012-04-18 20:37:23Z
+Group Comment : Members are authorized to perform cryptographic operations.
+Users         : None
+
+Group Name    : Power Users [0]
+LastWrite     : 2012-04-18 20:37:23Z
+Group Comment : Power Users are included for backwards compatibility and possess limited administrative powers
+Users         : None
+
+Group Name    : Performance Log Users [0]
+LastWrite     : 2009-07-14 04:34:12Z
+Group Comment : Members of this group may schedule logging of performance counters, enable trace providers, and collect event traces both locally and via remote access to this computer
+Users         : None
+
+Group Name    : Replicator [0]
+LastWrite     : 2012-04-18 20:37:23Z
+Group Comment : Supports file replication in a domain
+Users         : None
+
+Group Name    : Performance Monitor Users [0]
+LastWrite     : 2009-07-14 04:34:12Z
+Group Comment : Members of this group can access performance counter data locally and remotely
+Users         : None
+
+Group Name    : Remote Desktop Users [0]
+LastWrite     : 2012-04-18 20:37:23Z
+Group Comment : Members in this group are granted the right to logon remotely
+Users         : None
+
+Group Name    : IIS_IUSRS [1]
+LastWrite     : 2009-07-14 04:34:12Z
+Group Comment : Built-in group used by Internet Information Services.
+Users :
+  S-1-5-17
+
+Group Name    : Backup Operators [0]
+LastWrite     : 2012-04-18 20:37:23Z
+Group Comment : Backup Operators can override security restrictions for the sole purpose of backing up or restoring files
+Users         : None
+
+Analysis Tips:
+ - For well-known SIDs, see http://support.microsoft.com/kb/243330
+     - S-1-5-4  = Interactive
+     - S-1-5-11 = Authenticated Users
+ - Correlate the user SIDs to the output of the ProfileList plugin
+
+----------------------------------------

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrackMe #17 Keygen</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+            font-size: 1.1em;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+        }
+        
+        .result {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .serial-key {
+            font-family: 'Courier New', monospace;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #28a745;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #17a2b8;
+        }
+        
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #5a67d8;
+        }
+        
+        .algorithm {
+            font-family: 'Courier New', monospace;
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔓 CrackMe #17 Keygen</h1>
+        
+        <div class="input-group">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter name (minimum 5 characters)" oninput="generateSerial()">
+        </div>
+        
+        <div id="result"></div>
+        
+        <div class="info">
+            <strong>📝 Algorithm:</strong>
+            <div class="algorithm">
+Serial = Right(Name, 4).ToUpper() + "82F3"
+            </div>
+        </div>
+        
+        <div class="info">
+            <strong>🎯 How to use:</strong><br>
+            1. Enter a name (minimum 5 characters)<br>
+            2. Copy the generated serial key<br>
+            3. Paste into CrackMe #17 program<br>
+            4. Click CHECK to verify
+        </div>
+    </div>
+
+    <script>
+        function generateSerial() {
+            const nameInput = document.getElementById('nameInput');
+            const resultDiv = document.getElementById('result');
+            const name = nameInput.value.trim();
+            
+            if (name.length === 0) {
+                resultDiv.innerHTML = '';
+                return;
+            }
+            
+            if (name.length < 5) {
+                resultDiv.innerHTML = '<div class="error">❌ Name must be at least 5 characters long!</div>';
+                return;
+            }
+            
+            // Algorithm: Right(Name, 4).ToUpper() + "82F3"
+            const last4Chars = name.slice(-4).toUpperCase();
+            const serialKey = last4Chars + '82F3';
+            
+            resultDiv.innerHTML = `
+                <div class="result">
+                    <strong>✅ Generated Serial Key:</strong>
+                    <div class="serial-key" id="serialKey">${serialKey}</div>
+                    <button class="copy-btn" onclick="copyToClipboard('${serialKey}')">📋 Copy Serial</button>
+                </div>
+            `;
+        }
+        
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Serial key copied to clipboard!');
+            }).catch(function(err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Serial key copied to clipboard!');
+            });
+        }
+        
+        // Auto-focus on name input
+        document.getElementById('nameInput').focus();
+    </script>
+</body>
+</html>
